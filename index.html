@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Little Corner · A Web Beginner's First Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= Top bar with page tabs ================= -->
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <div class="logo">My Little Corner</div>
+            <nav class="tabs" id="tabs">
+                <button class="tab active" data-page="about">About</button>
+                <button class="tab" data-page="quotes">Quotes</button>
+                <button class="tab" data-page="projects">Projects</button>
+                <button class="tab" data-page="game">Useless Machine</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- ================= Page 1: About ================= -->
+        <section class="page active" id="page-about">
+            <div class="page-head">
+                <span class="tag">01 / About Me</span>
+                <h2>About Me</h2>
+                <p>Let me introduce myself first.</p>
+            </div>
+
+            <div class="about-card">
+                <img class="avatar" src="photo-me.jpg" alt="My profile picture">
+                <div>
+                    <h3>Hi, I'm a web beginner 👋</h3>
+                    <p>I'm a student who is just starting to learn web development. I like quiet places, clean layouts, and designs that don't shout at you.</p>
+                    <p>I write a little code and keep a little diary. This site is my first website. I built it with only HTML, CSS and a bit of JavaScript, and I split it into four pages: about me, my favorite quotes, projects I want to build, and a small
+                        useless machine.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= Page 2: Quotes ================= -->
+        <section class="page" id="page-quotes">
+            <div class="page-head">
+                <span class="tag">02 / Quotes</span>
+                <h2>My Favorite Quotes</h2>
+                <p>These lines helped me when I was not feeling great.</p>
+            </div>
+
+            <div class="quotes-grid">
+                <div class="quote-card">
+                    <blockquote>The only thing we have to fear is fear itself.</blockquote>
+                    <cite>— Franklin D. Roosevelt</cite>
+                </div>
+                <div class="quote-card">
+                    <blockquote>Life isn't about waiting for the storm to pass. It's about learning to dance in the rain.</blockquote>
+                    <cite>— Vivian Greene</cite>
+                </div>
+                <div class="quote-card">
+                    <blockquote>You must be the change you wish to see in the world.</blockquote>
+                    <cite>— Mahatma Gandhi</cite>
+                </div>
+                <div class="quote-card">
+                    <blockquote>There is a crack in everything, that's how the light gets in.</blockquote>
+                    <cite>— Leonard Cohen</cite>
+                </div>
+                <div class="quote-card">
+                    <blockquote>We are all in the gutter, but some of us are looking at the stars.</blockquote>
+                    <cite>— Oscar Wilde</cite>
+                </div>
+                <div class="quote-card">
+                    <blockquote>Know thyself.</blockquote>
+                    <cite>— Delphic Maxim</cite>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= Page 3: Projects ================= -->
+        <section class="page" id="page-projects">
+            <div class="page-head">
+                <span class="tag">03 / Future Projects</span>
+                <h2>Websites I Want to Build</h2>
+                <p>Four ideas, all for the same kind of people.</p>
+            </div>
+
+            <div class="audience">
+                <strong>Who it's for:</strong>
+                <span class="chip">Students</span>
+                <span class="chip">Sensitive, thoughtful people</span>
+            </div>
+
+            <!-- Four projects -->
+            <ul class="project-list">
+                <li class="project-item">
+                    <div class="num">01</div>
+                    <h4>Focus Helper</h4>
+                    <p>A gentle study timer with pomodoro and soft background sounds.</p>
+                </li>
+                <li class="project-item">
+                    <div class="num">02</div>
+                    <h4>Nearby Food Finder</h4>
+                    <p>Finds quiet, cheap places that are good for eating alone.</p>
+                </li>
+                <li class="project-item">
+                    <div class="num">03</div>
+                    <h4>Daily To-do Alternatives</h4>
+                    <p>Just three small things for today, plus a quick mood note.</p>
+                </li>
+                <li class="project-item">
+                    <div class="num">04</div>
+                    <h4>Singer Recommender</h4>
+                    <p>Recommends singers by mood, including lesser-known artists.</p>
+                </li>
+            </ul>
+
+            <!-- Build order -->
+            <h3 class="sub-title">Build Order</h3>
+            <ol class="steps">
+                <li>
+                    <h5>1. Mind map</h5>
+                    <p>List features first, then cut what's not needed.</p>
+                </li>
+                <li>
+                    <h5>2. Framework</h5>
+                    <p>Draw boxes to decide the layout.</p>
+                </li>
+                <li>
+                    <h5>3. Code</h5>
+                    <p>Build a minimal version, then improve it.</p>
+                </li>
+            </ol>
+
+            <!-- Mind map: only project names, no bullet items -->
+            <div class="sub-block">
+                <h4 class="sub-title">Step 1 · Mind Map</h4>
+                <div class="mm-simple">
+                    <div class="mm-col">
+                        <h5>Focus Helper</h5>
+                    </div>
+                    <div class="mm-col">
+                        <h5>Food Finder</h5>
+                    </div>
+                    <div class="mm-col">
+                        <h5>To-do Alternatives</h5>
+                    </div>
+                    <div class="mm-col">
+                        <h5>Singer Recommender</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: title kept, wireframe removed -->
+            <div class="sub-block">
+                <h4 class="sub-title">Step 2 · Page Framework</h4>
+            </div>
+
+            <!-- Step 3: Write the Code (title and description only) -->
+            <div class="sub-block">
+                <h4 class="sub-title">Step 3 · Write the Code</h4>
+                <p class="step-note">Once the mind map and the framework are ready, start writing the actual code. Build a minimal working version first, then add details and improvements step by step.</p>
+            </div>
+        </section>
+
+        <!-- ================= Page 4: Useless Machine ================= -->
+        <section class="page" id="page-game">
+            <div class="page-head">
+                <span class="tag">04 / Useless Machine</span>
+                <h2>Useless Machine</h2>
+                <p>It does nothing useful, but it is fun.</p>
+            </div>
+
+            <div class="game-card">
+                <h3>🔢 Useless Machine (1 – 1000)</h3>
+                <p>The system has picked a random integer between 1 and 1000. After each guess, it will tell you whether your guess is too high or too low. Nothing useful, just a little game.</p>
+
+                <div class="feedback" id="feedback"></div>
+
+                <div class="input-row">
+                    <input type="number" id="guessInput" placeholder="Enter a whole number 1–1000" min="1" max="1000">
+                    <button class="btn btn-primary" id="guessBtn">Guess</button>
+                    <button class="btn btn-ghost" id="resetBtn">Restart</button>
+                </div>
+
+                <div class="stat">Guesses so far: <strong id="count">0</strong></div>
+
+                <ul class="history" id="history"></ul>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
