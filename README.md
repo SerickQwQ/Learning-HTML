@@ -22,14 +22,15 @@ Switch between four pages using the tabs at the top, or open one directly via ha
 
 ## File structure
 
-├── index.html Page structure
-├── style.css All styles
+├── index.html          page structure
+├── manifest.json       home-screen icon config
+├── style.css       all styles
+├── script.js          Page switching · background · music · game
+├── bgm.mp3   Background music
 ├── script.js Page switching · background · music · game
-├── manifest.json PWA / home-screen icon config
 ├── avatar.jpg About page avatar (648×602)
 ├── poster.jpg Social share thumbnail (1200×630)
 ├── icon.png Tab / home-screen icon (square, 512×512)
-├── bgm.mp3 Background music
 └── README.md
 
 ## Author
