@@ -5,10 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Little Corner · A Web Beginner's First Site</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="My Little Corner">
+    <meta property="og:description" content="A web beginner's first site. About me, quotes, future projects, and a small useless machine.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/SerickQwQ/Learning-HTML/refs/heads/main/poster.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://raw.githubusercontent.com/SerickQwQ/Learning-HTML/refs/heads/main">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="My Little Corner">
+    <meta name="twitter:description" content="A web beginner's first site. About me, quotes, future projects, and a small useless machine.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/SerickQwQ/Learning-HTML/refs/heads/main/poster.jpg">
+
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#111111">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- Interactive background -->
+    <canvas id="bg" aria-hidden="true"></canvas>
+
+    <!-- Background music -->
+    <audio id="bgm" src="bgm.mp3" loop preload="none"></audio>
+    <button id="soundBtn" class="sound-btn" type="button" aria-pressed="false">♪ Sound Off</button>
 
     <!-- ================= Top bar with page tabs ================= -->
     <header class="topbar">
@@ -94,30 +121,6 @@
                 <span class="chip">Sensitive, thoughtful people</span>
             </div>
 
-            <!-- Four projects -->
-            <ul class="project-list">
-                <li class="project-item">
-                    <div class="num">01</div>
-                    <h4>Focus Helper</h4>
-                    <p>A gentle study timer with pomodoro and soft background sounds.</p>
-                </li>
-                <li class="project-item">
-                    <div class="num">02</div>
-                    <h4>Nearby Food Finder</h4>
-                    <p>Finds quiet, cheap places that are good for eating alone.</p>
-                </li>
-                <li class="project-item">
-                    <div class="num">03</div>
-                    <h4>Daily To-do Alternatives</h4>
-                    <p>Just three small things for today, plus a quick mood note.</p>
-                </li>
-                <li class="project-item">
-                    <div class="num">04</div>
-                    <h4>Singer Recommender</h4>
-                    <p>Recommends singers by mood, including lesser-known artists.</p>
-                </li>
-            </ul>
-
             <!-- Build order -->
             <h3 class="sub-title">Build Order</h3>
             <ol class="steps">
@@ -135,7 +138,7 @@
                 </li>
             </ol>
 
-            <!-- Mind map: only project names, no bullet items -->
+            <!-- Mind map: only project names -->
             <div class="sub-block">
                 <h4 class="sub-title">Step 1 · Mind Map</h4>
                 <div class="mm-simple">
@@ -154,12 +157,12 @@
                 </div>
             </div>
 
-            <!-- Step 2: title kept, wireframe removed -->
+            <!-- Step 2: title only -->
             <div class="sub-block">
                 <h4 class="sub-title">Step 2 · Page Framework</h4>
             </div>
 
-            <!-- Step 3: Write the Code (title and description only) -->
+            <!-- Step 3: title + description -->
             <div class="sub-block">
                 <h4 class="sub-title">Step 3 · Write the Code</h4>
                 <p class="step-note">Once the mind map and the framework are ready, start writing the actual code. Build a minimal working version first, then add details and improvements step by step.</p>
