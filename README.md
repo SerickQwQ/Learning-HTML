@@ -1,10 +1,6 @@
 # My Little Corner
 
 A web beginner's first site. Black and white, four pages, plain HTML / CSS / JavaScript — no framework, no backend, no build step.
-
-- **Live site**: `https://your-domain.com/` (replace after deployment)
-- **Stack**: HTML5 · CSS3 · Vanilla JavaScript · Web Manifest
-
 ---
 
 ## Pages
